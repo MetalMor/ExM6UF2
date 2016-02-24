@@ -2,23 +2,77 @@
     Created on : 04-feb-2016, 10:21:16
     Author     : mor
 */
-img {
+
+body {
+    padding: 10px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 3px 3px 5px #333;
+    font-size: larger;
+    background-image: url(../img/page/background.jpg);
+}
+
+p {
+    padding: 2px;
+    margin: 2px;
+    max-width: 70%;
+    font-size: larger;
+}
+
+h1 {
+    font-family: 'Fascinate Inline', cursive;
+}
+
+div {
+    margin: 2px;
+    padding: 2px;
+}
+
+div.block {
+    display: block;
+}
+
+div div img {
     width: auto;
     height: auto;
-    max-width: 200px;
-    max-height: 200px;
-    opacity: 1;
+    max-width: 150px;
+    max-height: 150px;
     float: right;
+    display: inline-block;
+    opacity: 1;
     alignment-adjust: central;
 }
 
-div.systemBox {
-    width: 200px;
-    height: 200px;
-    background-color: burlywood;
+.timeCount {
+    background-color: antiquewhite;
     padding: 10px;
-    border: 5px solid #000000;
+    float: none;
+    color: black;
+    border: 5px ridge darkslategrey;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: larger;
+    text-shadow: none;
+}
+
+div.timeCount {
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    alignment-adjust: middle;
+}
+
+div.system {
+    width: 150px;
+    height: 150px;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border: 5px ridge darkslategrey;
     float: left;
+}
+
+.hidden {
+    display: none;
 }
 
 .over {
@@ -26,5 +80,5 @@ div.systemBox {
 }
 
 .pick {
-    opacity: 0;
+    opacity: 0.3;
 }

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html manifest="manifest.appcache" >
+<!--<html>-->
+    <head>
+        <title>Juga!</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="mor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/page/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/classes.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </head>
+    <body onload="main()">
+        <div id="timeCounter" >
+            <label>Temps: </label>
+            <span id="time" class="timeCount" >0</span>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div id="player" class="block" >
+                        <div class="figure" id="divCircle" >
+                            <img id="circle" src="img/figure/circle.png" draggable="true" >
+                        </div>
+                        <div class="figure" id="divSquare" >
+                            <img id="square" src="img/figure/square.png" draggable="true" >
+                        </div>
+                        <div class="figure" id="divTriangle" >
+                            <img id="triangle" src="img/figure/triangle.png" draggable="true" >
+                        </div>
+                        <div class="figure" id="divDiamond" >
+                            <img id="diamond" src="img/figure/diamond.png" draggable="true" >
+                        </div>
+                        <button id="nextLevel" onclick="nextLevel()" >Següent nivell</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="game" class="block" >
+                        <div id="level01" class="level hidden" >
+                            <div id="b01" class="system" >
+                                <img src="img/figure/circle.png">
+                            </div>
+                            <div id="b02" class="system" >
+                                <img src="img/figure/square.png">
+                            </div>
+                            <div id="b03" class="system" >
+                                <img src="img/figure/triangle.png">
+                            </div>
+                            <div id="b04" class="system" >
+                                <!-- Element img a insertar mitjançant drag and drop -->
+                            </div>
+                        </div>
+                        <div id="level02" class="level hidden" >
+                            <div id="b01" class="system" >
+                                <img src="img/figure/circle.png">
+                            </div>
+                            <div id="b02" class="system" >
+                                <img src="img/figure/circle.png">
+                            </div>
+                            <div id="b03" class="system" >
+                                <img src="img/figure/circle.png">
+                            </div>
+                            <div id="b04" class="system" >
+                                <!-- Element img a insertar mitjançant drag and drop -->
+                            </div>
+                        </div>
+                        <div id="level03" class="level hidden" >
+                            <div id="b01" class="system" >
+                                <img src="img/figure/square.png">
+                            </div>
+                            <div id="b02" class="system" >
+                                <img src="img/figure/square.png">
+                            </div>
+                            <div id="b03" class="system" >
+                                <img src="img/figure/triangle.png">
+                            </div>
+                            <div id="b04" class="system" >
+                                <!-- Element img a insertar mitjançant drag and drop -->
+                            </div>
+                        </div>
+                        <div id="level04" class="level hidden" >
+                            <div id="b01" class="system" >
+                                <img src="img/figure/diamond.png">
+                            </div>
+                            <div id="b02" class="system" >
+                                <img src="img/figure/square.png">
+                            </div>
+                            <div id="b03" class="system" >
+                                <img src="img/figure/diamond.png">
+                            </div>
+                            <div id="b04" class="system" >
+                                <!-- Element img a insertar mitjançant drag and drop -->
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </table> 
+            <div id="timeCount" class="hidden" >
+                <h1>Enhorabona! Has acabat el joc. Aquests son els teus resultats</h1>
+                <label>Level 01: </label><div id="time01" class="timeCount" ></div>
+                <label>Level 02: </label><div id="time02" class="timeCount" ></div>
+                <label>Level 03: </label><div id="time03" class="timeCount" ></div>
+                <label>Level 04: </label><div id="time04" class="timeCount" ></div>
+            </div>
+    </body>
+</html>

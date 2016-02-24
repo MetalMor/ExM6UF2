@@ -1,31 +1,33 @@
+
 <!DOCTYPE html>
-<!--
-HTML FIGURES DRAG'N'DROP
--->
-<html>
+<html manifest="manifest.appcache" >
+<!--<html>-->
     <head>
-        <title>Drag'n'Drop - Joel G. Fdez</title>
+        <title>Drag'n'Drop - Joel G. Fernándeath</title>
         <meta charset="UTF-8">
+        <meta name="author" content="mor">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="img/icon/favicon.ico">
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/dndHandler.js" ></script>
-        <script type="text/javascript" src="js/levels.js" ></script>
-        <script type="text/javascript" src="js/main.js" ></script>
+        <link rel="shortcut icon" href="img/page/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Fascinate+Inline' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/functions.js"></script>
     </head>
     <body>
-        <div id="system" class="global">
-            <div id="sb01" class="systemBox" ></div>
-            <div id="sb02" class="systemBox" ></div>
-            <div id="sb03" class="systemBox" ></div>
-            <div id="sb04" name="solution" class="systemBox" ></div>
-        </div>
-        <BR/>
-        <div id="player" class="global" >
-            <img id="circle" class="playerBox" draggable="true" src="img/figure/circle.png" />
-            <img id="square" class="playerBox" draggable="true" src="img/figure/square.png" />
-            <img id="triangle" class="playerBox" draggable="true" src="img/figure/triangle.png" />
-            <img id="diamond" class="playerBox" draggable="true" src="img/figure/diamond.png" />
-        </div>
+        <h1>JOC DE FIGURES: troba la figura correcta en cada cas [OBRIR AMB GOOGLE CHROME]</h1>
+        <p>
+            Hi ha quatre nivells. En cada un, has de seleccionar la figura que
+            creguis que s'ha de col·locar a la caixa buida. Si encertes, podràs
+            passar al següent nivell, però si falles, s'afegiran 5 segons al
+            comptador de temps. Finalment, es mostraran els teus resultats en
+            acabar l'últim nivell.
+            <br>
+            ¡Molta sort!
+            <br>
+        </p>
+        <form action='game.html'>
+            <label>Clica al botó per començar:</label><br>
+            <input type="submit" value="Començar" />
+        </form>
     </body>
 </html>
